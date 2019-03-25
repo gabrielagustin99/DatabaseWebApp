@@ -1,3 +1,4 @@
+    
 <meta charset="UTF-8">
 <title>Base Web App</title>
 
@@ -21,20 +22,18 @@
 
 <!-- Now everything we'll need to use firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
-
-  <script type="text/javascript">
-  
-    //replace this with the config in the code snippet provided from Firebase.
+  <script>
+    // Initialize Firebase
     var config = {
       apiKey: '<%= process.env.API_KEY %>', // this references the API_KEY environemnt variable!
-      authDomain: "databaseexample-5d86a.firebaseapp.com",
-      databaseURL: "https://databaseexample-5d86a.firebaseio.com",
-      projectId: "databaseexample-5d86a",
-      storageBucket: "databaseexample-5d86a.appspot.com",
-      messagingSenderId: "684265563648"
+      authDomain: "hubspotdatabasetest.firebaseapp.com",
+      databaseURL: "https://hubspotdatabasetest.firebaseio.com",
+      projectId: "hubspotdatabasetest",
+      storageBucket: "hubspotdatabasetest.appspot.com",
+      messagingSenderId: "1036186082636"
     };
-
     firebase.initializeApp(config);
+  </script>initializeApp(config);
   </script>
 
 <!-- then our app's own js file -->
